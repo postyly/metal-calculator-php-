@@ -8,8 +8,15 @@ $input[0] =array('path' => 'input1',
     'label' => 'Номер шестигранника a',
     'units' => 'mm.');
 
-$input[1] =array('path' => 'input2',
-    'label' => 'Длина L',
-    'units' => 'm.');
+if ($_SESSION['role'] == 'weight'){
+    $input[1] =array('path' => 'input2',
+        'label' => 'длина L',
+        'units' => 'м.');
+}
+else{
+    $input[1] =array('path' => 'input2',
+        'label' => 'Вес',
+        'units' => 'кг.');
+}
 
 $path = "Hexahedron";

@@ -12,8 +12,15 @@ $input[1] =array('path' => 'input2',
     'label' => 'Толщина стенки t',
     'units' => 'mm.');
 
-$input[2] =array('path' => 'input3',
-    'label' => 'Длина L',
-    'units' => 'm.');
+if ($_SESSION['role'] == 'weight'){
+    $input[2] =array('path' => 'input3',
+        'label' => 'длина L',
+        'units' => 'м.');
+}
+else{
+    $input[2] =array('path' => 'input3',
+        'label' => 'Вес',
+        'units' => 'кг.');
+}
 
 $path = "PipeCircle";

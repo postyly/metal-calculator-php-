@@ -5,18 +5,25 @@ $select[0]['options'] = $steel_grade;
 
 $input[0] =array('path' => 'input1',
     'label' => 'Ширина трубы a',
-    'units' => 'mm.');
+    'units' => 'мм.');
 
 $input[1] =array('path' => 'input2',
     'label' => 'Высота трубы b',
-    'units' => 'mm.');
+    'units' => 'мм.');
 
 $input[2] =array('path' => 'input3',
     'label' => 'Толщина стенки t',
-    'units' => 'mm.');
+    'units' => 'мм.');
 
-$input[3] =array('path' => 'input3',
-    'label' => 'Длина L',
-    'units' => 'm.');
+if ($_SESSION['role'] == 'weight'){
+    $input[3] =array('path' => 'input4',
+        'label' => 'длина L',
+        'units' => 'м.');
+}
+else{
+    $input[3] =array('path' => 'input4',
+        'label' => 'Вес',
+        'units' => 'кг.');
+}
 
 $path = "PipeProf";

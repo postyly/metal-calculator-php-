@@ -1,5 +1,14 @@
 <?php
-
+if (isset($_GET['role'])) {
+    if ($_GET['role'] == "weight") {
+        $_SESSION['role'] = "weight";
+    } elseif ($_GET['role'] == "length") {
+        $_SESSION['role'] = "length";
+    }
+}
+elseif(empty($_SESSION['role'])) {
+    $_SESSION['role'] = "weight";
+}
 //отрисовка формы
 if (isset($_GET['assortment'])){
     switch ($_GET['assortment']){
@@ -42,10 +51,5 @@ if (isset($_GET['assortment'])){
     }
 }
 else{
-    $form[0] =array('path' => 'input1',
-        'label' => 'сторона квадрата а',
-        'units' => 'mm.');
-    $form[1] =array('path' => 'input2',
-        'label' => 'длина L',
-        'units' => 'm.');
+    require_once "models/square.form.php";
 }

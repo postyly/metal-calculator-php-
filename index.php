@@ -1,5 +1,6 @@
 <?php
 error_reporting(E_ALL);
+session_start();
 require_once "core/varible.php";
 require_once "core/controller.php";
 ?>
@@ -43,7 +44,9 @@ require_once "core/controller.php";
 </div>
 
 
-<?php var_dump($_POST)?>
+<?php var_dump($_POST);
+echo "<br>";
+var_dump($_SESSION);?>
 
 
 

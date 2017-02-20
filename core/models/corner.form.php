@@ -16,8 +16,15 @@ $input[2] =array('path' => 'input3',
     'label' => 'Толщина полки t',
     'units' => 'mm.');
 
-$input[2] =array('path' => 'input3',
-    'label' => 'Длина L',
-    'units' => 'm.');
+if ($_SESSION['role'] == 'weight'){
+    $input[3] =array('path' => 'input4',
+        'label' => 'длина L',
+        'units' => 'м.');
+}
+else{
+    $input[3] =array('path' => 'input4',
+        'label' => 'Вес',
+        'units' => 'кг.');
+}
 
 $path = "Corner";

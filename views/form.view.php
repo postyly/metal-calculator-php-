@@ -1,3 +1,5 @@
+<a class="btn btn-default <?= ($_SESSION['role'] == "weight") ? "active" : "" ;?>" href="?role=weight" role="button">вес</a>
+<a class="btn btn-default <?= ($_SESSION['role'] == "length") ? "active" : "" ;?>" href="?role=length" role="button">длина</a>
 <form action="#" method="post" class="form-group" name="<?= $path ?>">
     <?php foreach ($select as $value): ?>
         <label><p><?= $value['title'] ?></p>
