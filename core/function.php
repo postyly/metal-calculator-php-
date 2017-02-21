@@ -1,7 +1,8 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: posty
- * Date: 20.02.2017
- * Time: 15:16
- */
+//функция проверяет является ли переданный параметр целым числом и возвращает его, если нет возвращает 0
+function isInt($value){
+    if ((int)$value){
+        return $value;
+    }
+    return 0;
+}

@@ -21,3 +21,4 @@ $input[3] =array('path' => 'input4',
     'units' => 'шт');
 
 $path = "Branch";
+$radio_button = false;

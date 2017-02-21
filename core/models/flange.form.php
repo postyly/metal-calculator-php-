@@ -13,3 +13,4 @@ $input[0] =array('path' => 'input1',
     'units' => 'шт.');
 
 $path = "Flange";
+$radio_button = false;

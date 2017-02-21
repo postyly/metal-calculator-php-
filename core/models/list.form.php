@@ -17,3 +17,4 @@ $input[3] =array('path' => 'input4',
                 'units' => 'шт');
 
 $path = "List";
+$radio_button = false;

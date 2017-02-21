@@ -1,6 +1,7 @@
 <?php
 error_reporting(E_ALL);
 session_start();
+require_once "core/function.php";
 require_once "core/varible.php";
 require_once "core/controller.php";
 ?>
@@ -11,7 +12,7 @@ require_once "core/controller.php";
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <title>Калькулятор Металла</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -46,7 +47,9 @@ require_once "core/controller.php";
 
 <?php var_dump($_POST);
 echo "<br>";
-var_dump($_SESSION);?>
+var_dump($_SESSION);
+echo "<br>";
+var_dump($_GET);?>
 
 
 

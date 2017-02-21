@@ -17,3 +17,4 @@ else{
         'units' => 'кг.');
 }
 $path = "Square";
+$radio_button = true;

@@ -21,5 +21,5 @@ else{
         'label' => 'Вес',
         'units' => 'кг.');
 }
-
 $path = "Ribbon";
+$radio_button = true;

@@ -25,5 +25,5 @@ else{
         'label' => 'Вес',
         'units' => 'кг.');
 }
-
 $path = "PipeProf";
+$radio_button = true;
