@@ -29,7 +29,7 @@ require_once "core/controller.php";
 </head>
 <body>
 <div class="container">
-    <h1>Калькулятор веса нержавеющего металлопроката.</h1>
+    <h1 class="text-center">Калькулятор веса нержавеющего металлопроката.</h1>
     <div class="col-lg-4 col-md-4">
 <!--        меню, выбор сортамента-->
     <?php include_once "views/menu.view.php";?>

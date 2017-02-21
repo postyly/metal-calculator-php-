@@ -18,3 +18,4 @@ else{
 }
 $path = "Square";
 $radio_button = true;
+$title_img = "Квадрат";

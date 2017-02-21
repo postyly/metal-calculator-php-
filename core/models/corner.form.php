@@ -29,3 +29,4 @@ else{
 
 $path = "Corner";
 $radio_button = true;
+$title_img = "Уголок";

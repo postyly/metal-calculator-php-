@@ -27,3 +27,4 @@ else{
 }
 $path = "PipeProf";
 $radio_button = true;
+$title_img = "Труба профильная";

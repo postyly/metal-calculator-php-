@@ -31,3 +31,4 @@ else{
 }
 $path = "Ribbon";
 $radio_button = true;
+$title_img = "Лента";

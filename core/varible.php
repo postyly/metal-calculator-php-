@@ -1,6 +1,7 @@
 <?php
 //menu
-$assortment = array('Square' => array('Square', 'Квадрат'),
+$assortment = array(
+    'Square' => array('Square', 'Квадрат'),
     'Circle' => array('Circle', 'Круг/пруток'),
     'Ribbon' => array('Ribbon', 'Лента'),
     'List' => array('List', 'Лист/плита'),

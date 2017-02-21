@@ -25,3 +25,4 @@ else{
 
 $path = "PipeCircle";
 $radio_button = true;
+$title_img = "Труба круглая";

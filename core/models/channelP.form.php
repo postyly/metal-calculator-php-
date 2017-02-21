@@ -29,3 +29,4 @@ else{
 
 $path = "ChannelP";
 $radio_button = true;
+$title_img = "Швеллер";

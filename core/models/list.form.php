@@ -18,3 +18,4 @@ $input[3] =array('path' => 'input4',
 
 $path = "List";
 $radio_button = false;
+$title_img = "Лист/плита";

@@ -21,3 +21,4 @@ else{
 
 $path = "Hexahedron";
 $radio_button = true;
+$title_img = "Шестигранник";

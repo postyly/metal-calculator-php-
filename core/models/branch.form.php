@@ -22,3 +22,4 @@ $input[3] =array('path' => 'input4',
 
 $path = "Branch";
 $radio_button = false;
+$title_img = "Отвод";

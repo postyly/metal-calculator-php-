@@ -14,3 +14,4 @@ $input[0] =array('path' => 'input1',
 
 $path = "Flange";
 $radio_button = false;
+$title_img = "Фланец плоский";

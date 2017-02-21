@@ -19,3 +19,4 @@ else{
 
 $path = "Circle";
 $radio_button = true;
+$title_img = "Круг/пруток";
