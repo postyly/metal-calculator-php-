@@ -19,9 +19,13 @@ else {
     $b = isNumber($_POST['input2']);
     $t = isNumber($_POST['input3']);
     $weight = isNumber($_POST['input4']);
-
-    $length = $weight * 1000 / ($density * (($a * $b) - ($a - $t) * ($b - $t)));
-    //округляем до 0,001
-    $length = round($length, 3);
+    if ($a == 0 or $b == 0 or $t == 0 or $weight == 0){
+        $length = 0;
+    }
+    else {
+        $length = $weight * 1000 / ($density * (($a * $b) - ($a - $t) * ($b - $t)));
+        //округляем до 0,001
+        $length = round($length, 3);
+    }
     $result = "Длина = " . $length . " м.";
 }

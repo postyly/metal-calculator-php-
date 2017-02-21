@@ -16,8 +16,12 @@ else{
     $density = isNumber($_POST['input']);
     $diam = isNumber($_POST['input1']);
     $weight = isNumber($_POST['input2']);
-
-    $result = (($weight  / $density) / ($diam * $diam * M_PI / 4)) * 1000;
-    $result = round($result, 3);
-    $result = "Длина = " . $result . " м.";
+    if ($diam == 0 or $weight == 0){
+        $length = 0;
+    }
+    else {
+        $length = (($weight / $density) / ($diam * $diam * M_PI / 4)) * 1000;
+        $length = round($length, 3);
+    }
+    $result = "Длина = " . $length . " м.";
 }

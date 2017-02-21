@@ -19,7 +19,12 @@ else{
     $t = isNumber($_POST['input2']);
     $weight = isNumber($_POST['input3']);
 
+if ($a == 0 or $t == 0){
+    $result = 0;
+}
+else{
     $result = $weight * 1000 / ($a * $t * $density);
     $result = round($result, 3);
+}
     $result = "Длина = " . $result . " м.";
 }

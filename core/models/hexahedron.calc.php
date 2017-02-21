@@ -15,9 +15,13 @@ else {
     $density = isNumber($_POST['input']);
     $a = isNumber($_POST['input1']);
     $weight = isNumber($_POST['input2']);
-
-    $length = $weight * 1000 / ((3 * $a * $a) / (2 * sqrt(3)) * $density);
-    //округляем до 0,001
-    $length = round($length, 3);
+    if ($a == 0 or $weight == 0){
+        $length = 0;
+    }
+    else {
+        $length = $weight * 1000 / ((3 * $a * $a) / (2 * sqrt(3)) * $density);
+        //округляем до 0,001
+        $length = round($length, 3);
+    }
     $result = "Длина = " . $length . " м.";
 }

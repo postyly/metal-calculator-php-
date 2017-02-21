@@ -45,11 +45,11 @@ require_once "core/controller.php";
 </div>
 
 
-<?php var_dump($_POST);
-echo "<br>";
-var_dump($_SESSION);
-echo "<br>";
-var_dump($_GET);?>
+<?php //var_dump($_POST);
+//echo "<br>";
+//var_dump($_SESSION);
+//echo "<br>";
+//var_dump($_GET);?>
 
 
 

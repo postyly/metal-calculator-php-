@@ -10,16 +10,18 @@ if ($_SESSION['role'] == 'weight') {
 //округляем до 0,01
     $weight = round($weight, 2);
     $result = "Вес = " . $weight . " кг.";
-}
-//рассчет длина круглая труба
+} //рассчет длина круглая труба
 else {
     $density = isNumber($_POST['input']);
     $diam = isNumber($_POST['input1']);
     $t = isNumber($_POST['input2']);
     $weight = isNumber($_POST['input3']);
-
-    $length = ($weight * 1000) / ($density * $diam * $t * M_PI);
-    //округляем до 0,001
-    $length = round($length, 3);
+    if ($diam == 0 or $t == 0 or $weight == 0) {
+        $length = 0;
+    } else {
+        $length = ($weight * 1000) / ($density * $diam * $t * M_PI);
+        //округляем до 0,001
+        $length = round($length, 3);
+    }
     $result = "Длина = " . $length . " м.";
 }
