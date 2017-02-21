@@ -3,8 +3,10 @@
 if (isset($_GET['role'])) {
     if ($_GET['role'] == "weight") {
         $_SESSION['role'] = "weight";
+        goBack();
     } elseif ($_GET['role'] == "length") {
         $_SESSION['role'] = "length";
+        goBack();
     }
 }
 elseif(empty($_SESSION['role'])) {
@@ -82,5 +84,9 @@ if (!empty($_POST)){
             break;
         case 'Hexahedron':
             require_once "models/hexahedron.calc.php";
+            break;
+        case 'ChannelP':
+            require_once "models/channelP.calc.php";
+            break;
     }
 }

@@ -20,7 +20,7 @@
     <?php foreach ($input as $value): ?>
         <p><label for="input"><?= $value['label'] ?></label></p>
         <div class="input-group">
-                <input id="input" type="text" name="<?= $value['path'] ?>" class="form-control" pattern="^[ 0-9]+$">
+                <input id="input" type="text" name="<?= $value['path'] ?>" class="form-control" pattern="^[0-9.,fй]+$" placeholder="0">
             <div class="input-group-addon"><?= $value['units'] ?></div>
         </div>
     <?php endforeach; ?>

@@ -1,10 +1,10 @@
 <?php
 //рассчет веса лента
 if ($_SESSION['role'] == 'weight'){
-    $density = isInt($_POST['input']);
-    $a = isInt($_POST['input1']);
-    $t = isInt($_POST['input2']);
-    $l = isInt($_POST['input3']);
+    $density = isNumber($_POST['input']);
+    $a = isNumber($_POST['input1']);
+    $t = isNumber($_POST['input2']);
+    $l = isNumber($_POST['input3']);
 
     $result = $a * $t * $l * $density / 1000;
 //округляем до 0,01
@@ -14,10 +14,10 @@ if ($_SESSION['role'] == 'weight'){
 
 //рассчет длина лента
 else{
-    $density = isInt($_POST['input']);
-    $a = isInt($_POST['input1']);
-    $t = isInt($_POST['input2']);
-    $weight = isInt($_POST['input3']);
+    $density = isNumber($_POST['input']);
+    $a = isNumber($_POST['input1']);
+    $t = isNumber($_POST['input2']);
+    $weight = isNumber($_POST['input3']);
 
     $result = $weight * 1000 / ($a * $t * $density);
     $result = round($result, 3);

@@ -1,18 +1,30 @@
 <?php
 
-$select[0]['title'] = 'Номер швеллера';
-$select[0]['name'] = "channel";
-$select[0]['options'] = $channel;
+$select[0]['title'] = 'марки стали';
+$select[0]['name'] = "steel_grade";
+$select[0]['options'] = $steel_grade;
+
+$input[0] =array('path' => 'input1',
+    'label' => 'Ширина a',
+    'units' => 'мм.');
+
+$input[1] =array('path' => 'input2',
+    'label' => 'Высота b',
+    'units' => 'мм.');
+
+$input[2] =array('path' => 'input3',
+    'label' => 'Толщина t',
+    'units' => 'мм.');
 
 if ($_SESSION['role'] == 'weight'){
-    $input[0] =array('path' => 'input1',
-        'label' => 'длина L',
-        'units' => 'м.');
+    $input[3] =array('path' => 'input4',
+                    'label' => 'Длина L',
+                    'units' => 'м.');
 }
 else{
-    $input[0] =array('path' => 'input1',
-        'label' => 'Вес',
-        'units' => 'кг.');
+    $input[3] =array('path' => 'input4',
+                    'label' => 'Вес',
+                    'units' => 'кг.');
 }
 
 $path = "ChannelP";

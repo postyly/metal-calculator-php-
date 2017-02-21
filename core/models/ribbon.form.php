@@ -11,6 +11,14 @@ $input[1] =array('path' => 'input2',
                 'label' => 'Толщина ленты t',
                 'units' => 'мм.');
 
+$input[2] =array('path' => 'input3',
+    'label' => 'Ширина ленты a',
+    'units' => 'мм.');
+
+$input[3] =array('path' => 'input4',
+    'label' => 'Толщина ленты t',
+    'units' => 'мм.');
+
 if ($_SESSION['role'] == 'weight'){
     $input[2] =array('path' => 'input3',
         'label' => 'длина L',
