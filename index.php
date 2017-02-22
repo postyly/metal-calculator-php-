@@ -44,20 +44,20 @@ require_once "core/controller.php";
     </div>
 </div>
 
-<pre>
+<!--<pre>-->
 <?php
-echo "POST";
-echo "<br>";
-var_dump($_POST);
-echo "SESSION";
-echo "<br>";
-var_dump($_SESSION);
-echo "input";
-echo "<br>";
-var_dump($input);
-echo "<br>";
-var_dump($arr);
-?>
+//echo "POST";
+//echo "<br>";
+//var_dump($_POST);
+//echo "SESSION";
+//echo "<br>";
+//var_dump($_SESSION);
+//echo "input";
+//echo "<br>";
+//var_dump($input);
+//echo "<br>";
+//var_dump($arr);
+//?>
 
 
 

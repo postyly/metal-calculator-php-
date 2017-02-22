@@ -1,6 +1,5 @@
 <?php
 //рассчет веса лист
-if ($_SESSION['role'] == 'weight') {
     $density = isNumber($steel_grade[$_POST['input']]);
     $t = isNumber($_POST['input1']);
     $a = isNumber($_POST['input2']);
@@ -16,22 +15,4 @@ if ($_SESSION['role'] == 'weight') {
 //округляем до 0,01
     $weight = round($weight, 2);
     $area = round($area, 2);
-    $result = "Площадь = " . $area . "м2. Вес = " . $weight . " кг.";
-} //рассчет длина лист
-else {
-    $density = isNumber($steel_grade[$_POST['input']]);
-    $a = isNumber($_POST['input1']);
-    $t = isNumber($_POST['input2']);
-    $weight = isNumber($_POST['input3']);
-    $_SESSION['input'] = $_POST['input'];
-    $_SESSION['input1'] = $a;
-    $_SESSION['input2'] = $t;
-    $_SESSION['input3'] = $weight;
-    if ($a == 0 or $t == 0 or $weight == 0) {
-        $length = 0;
-    } else {
-        $length = $weight * 1000 / ($a * $t * $density);
-        $length = round($result, 3);
-    }
-    $result = "Длина = " . $length . " м.";
-}
+    $result = "Площадь = " . $area . " м2. Вес = " . $weight . " кг.";
