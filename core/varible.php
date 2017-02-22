@@ -147,7 +147,9 @@ $channel = array('5П' => 1,
                 '40П' => 33,
                 '40У' => 34
 );
-
+if (empty($_SESSION['path'])){
+    $_SESSION['path'] = 'qwerty';
+}
 
 
 
