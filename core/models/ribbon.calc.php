@@ -1,10 +1,11 @@
 <?php
 //рассчет веса лента
 if ($_SESSION['role'] == 'weight'){
-    $density = isNumber($_POST['input']);
+    $density = isNumber($steel_grade[$_POST['input']]);
     $a = isNumber($_POST['input1']);
     $t = isNumber($_POST['input2']);
     $l = isNumber($_POST['input3']);
+    $_SESSION['input'] = $_POST['input'];
     $_SESSION['input1'] = $a;
     $_SESSION['input2'] = $t;
     $_SESSION['input3'] = $l;
@@ -17,10 +18,11 @@ if ($_SESSION['role'] == 'weight'){
 
 //рассчет длина лента
 else{
-    $density = isNumber($_POST['input']);
+    $density = isNumber($steel_grade[$_POST['input']]);
     $a = isNumber($_POST['input1']);
     $t = isNumber($_POST['input2']);
     $weight = isNumber($_POST['input3']);
+    $_SESSION['input'] = $_POST['input'];
     $_SESSION['input1'] = $a;
     $_SESSION['input2'] = $t;
     $_SESSION['input3'] = $weight;

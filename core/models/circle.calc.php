@@ -1,9 +1,10 @@
 <?php
 //рассчет веса круг/пруток
 if ($_SESSION['role'] == 'weight'){
-    $density = isNumber($_POST['input']);
+    $density = isNumber($steel_grade[$_POST['input']]);
     $diam = isNumber($_POST['input1']);
     $l = isNumber($_POST['input2']);
+    $_SESSION['input'] = $_POST['input'];
     $_SESSION['input1'] = $diam;
     $_SESSION['input2'] = $l;
     $result = $diam * $diam * M_PI * $l * $density / (4 * 1000);
@@ -14,9 +15,10 @@ if ($_SESSION['role'] == 'weight'){
 
 //рассчет длина круг/пруток
 else{
-    $density = isNumber($_POST['input']);
+    $density = isNumber($steel_grade[$_POST['input']]);
     $diam = isNumber($_POST['input1']);
     $weight = isNumber($_POST['input2']);
+    $_SESSION['input'] = $_POST['input'];
     $_SESSION['input1'] = $diam;
     $_SESSION['input2'] = $weight;
     if ($diam == 0 or $weight == 0){

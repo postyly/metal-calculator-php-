@@ -9,12 +9,12 @@
 <!--форма для ввода данных для расчета-->
 <form action="" method="post" class="form-group" name="<?= $path ?>">
     <?php foreach ($select as $value): ?>
-        <label><p><?= $value['title'] ?></p>
-            <p><select class="form-control" name="input">
-                    <?php foreach ($value['options'] as $key => $value): ?>
-                        <option value="<?= $value ?>"><?= $key ?></option>
+        <label><?= $value['title'] ?>
+            <select class="form-control" name="input">
+                    <?php foreach ($value['options'] as $key => $item): ?>
+                        <option <?= ($key == $_SESSION['input']) ? "selected" : "" ; ?> value="<?= $key ?>"><?= $key ?></option>
                     <?php endforeach; ?>
-                </select></p>
+                </select>
         </label>
     <?php endforeach; ?>
 
@@ -22,7 +22,7 @@
     <?php foreach ($input as $value): ?>
         <p><label for="input"><?= $value['label'] ?></label></p>
         <div class="input-group">
-            <input type="text" id="input" name="<?= $value['path'] ?>" class="form-control" pattern="^[0-9.,]+$"
+            <input type="text"id="input" name="<?= $value['path'] ?>" class="form-control" pattern="^[0-9.,]+$"
                    onfocus="if (this.value == '<?= $value['value'] ?>') {this.value = '';}"
                    onblur="if (this.value == '') {this.value = '<?= $value['value'] ?>';}" value="<?= $value['value'] ?>">
 

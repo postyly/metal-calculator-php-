@@ -1,9 +1,10 @@
 <?php
 //рассчет веса квадрат
 if ($_SESSION['role'] == 'weight') {
-    $density = isNumber($_POST['input']);
+    $density = isNumber($steel_grade[$_POST['input']]);
     $a = isNumber($_POST['input1']);
     $l = isNumber($_POST['input2']);
+    $_SESSION['input'] = $_POST['input'];
     $_SESSION['input1'] = $a;
     $_SESSION['input2'] = $l;
 
@@ -13,9 +14,10 @@ if ($_SESSION['role'] == 'weight') {
     $result = "Вес = " . $result . " кг.";
 } //рассчет длина квадрат
 else {
-    $density = isNumber($_POST['input']);
+    $density = isNumber($steel_grade[$_POST['input']]);
     $a = isNumber($_POST['input1']);
     $weight = isNumber($_POST['input2']);
+    $_SESSION['input'] = $_POST['input'];
     $_SESSION['input1'] = $a;
     $_SESSION['input2'] = $weight;
     if ($a == 0) {

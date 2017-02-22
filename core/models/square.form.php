@@ -5,7 +5,6 @@ if ($_SESSION['path'] != "Square"){
 $select[0]['title'] = 'марки стали';
 $select[0]['name'] = "steel_grade";
 $select[0]['options'] = $steel_grade;
-$qwe = 200;
 $input[0] =array('path' => 'input1',
                 'label' => 'сторона квадрата а',
                 'units' => 'мм.',

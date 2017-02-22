@@ -55,7 +55,9 @@ var_dump($_SESSION);
 echo "input";
 echo "<br>";
 var_dump($input);
-var_dump($_SERVER["HTTP_REFERER"])?>
+echo "<br>";
+var_dump($arr);
+?>
 
 
 

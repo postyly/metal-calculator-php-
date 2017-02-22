@@ -15,7 +15,7 @@ function goBack(){
 }
 
 function session_input_to_0(){
-    $_SESSION['input'] = 0 ;
+    $_SESSION['input'] = '12Х18Н10Т' ;
     $_SESSION['input1'] = 0 ;
     $_SESSION['input2'] = 0 ;
     $_SESSION['input3'] = 0 ;

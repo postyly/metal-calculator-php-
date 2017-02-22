@@ -1,11 +1,12 @@
 <?php
 //рассчет веса уголок
 if ($_SESSION['role'] == 'weight') {
-    $density = isNumber($_POST['input']);
+    $density = isNumber($steel_grade[$_POST['input']]);
     $a = isNumber($_POST['input1']);
     $b = isNumber($_POST['input2']);
     $t = isNumber($_POST['input3']);
     $l = isNumber($_POST['input4']);
+    $_SESSION['input'] = $_POST['input'];
     $_SESSION['input1'] = $a;
     $_SESSION['input2'] = $b;
     $_SESSION['input3'] = $t;
@@ -17,11 +18,12 @@ if ($_SESSION['role'] == 'weight') {
 }
 //рассчет длина уголок
 else {
-    $density = isNumber($_POST['input']);
+    $density = isNumber($steel_grade[$_POST['input']]);
     $a = isNumber($_POST['input1']);
     $b = isNumber($_POST['input2']);
     $t = isNumber($_POST['input3']);
     $weight = isNumber($_POST['input4']);
+    $_SESSION['input'] = $_POST['input'];
     $_SESSION['input1'] = $a;
     $_SESSION['input2'] = $b;
     $_SESSION['input3'] = $t;
