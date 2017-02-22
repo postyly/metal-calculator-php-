@@ -13,6 +13,39 @@ elseif(empty($_SESSION['role'])) {
     $_SESSION['role'] = "weight";
 }
 
+//обработка данных введенных пользователем
+if (!empty($_POST)){
+    switch ($_POST['operation_type']){
+        case 'Square':
+            require_once "models/square.calc.php";
+            break;
+        case 'Circle':
+            require_once "models/circle.calc.php";
+            break;
+        case 'Ribbon':
+            require_once "models/ribbon.calc.php";
+            break;
+        case 'List':
+            require_once "models/list.calc.php";
+            break;
+        case 'PipeCircle':
+            require_once "models/pipeCircle.calc.php";
+            break;
+        case 'PipeProf':
+            require_once "models/pipeProf.calc.php";
+            break;
+        case 'Corner':
+            require_once "models/corner.calc.php";
+            break;
+        case 'Hexahedron':
+            require_once "models/hexahedron.calc.php";
+            break;
+        case 'ChannelP':
+            require_once "models/channelP.calc.php";
+            break;
+    }
+}
+
 //отрисовка формы
 if (isset($_GET['assortment'])){
     switch ($_GET['assortment']){
@@ -58,35 +91,3 @@ else{
     require_once "models/square.form.php";
 }
 
-//обработка данных введенных пользователем
-if (!empty($_POST)){
-    switch ($_POST['operation_type']){
-        case 'Square':
-            require_once "models/square.calc.php";
-            break;
-        case 'Circle':
-            require_once "models/circle.calc.php";
-            break;
-        case 'Ribbon':
-            require_once "models/ribbon.calc.php";
-            break;
-        case 'List':
-            require_once "models/list.calc.php";
-            break;
-        case 'PipeCircle':
-            require_once "models/pipeCircle.calc.php";
-            break;
-        case 'PipeProf':
-            require_once "models/pipeProf.calc.php";
-            break;
-        case 'Corner':
-            require_once "models/corner.calc.php";
-            break;
-        case 'Hexahedron':
-            require_once "models/hexahedron.calc.php";
-            break;
-        case 'ChannelP':
-            require_once "models/channelP.calc.php";
-            break;
-    }
-}

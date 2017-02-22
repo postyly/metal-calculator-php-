@@ -44,12 +44,18 @@ require_once "core/controller.php";
     </div>
 </div>
 
-
-<?php //var_dump($_POST);
-//echo "<br>";
-//var_dump($_SESSION);
-//echo "<br>";
-//var_dump($_GET);?>
+<pre>
+<?php
+echo "POST";
+echo "<br>";
+var_dump($_POST);
+echo "SESSION";
+echo "<br>";
+var_dump($_SESSION);
+echo "input";
+echo "<br>";
+var_dump($input);
+var_dump($_SERVER["HTTP_REFERER"])?>
 
 
 

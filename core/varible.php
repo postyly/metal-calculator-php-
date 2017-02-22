@@ -1,4 +1,9 @@
 <?php
+//(isset($_SESSION['input1'])) ? "" : $_SESSION['input1'] = 0 ;
+//(isset($_SESSION['input2'])) ? "" : $_SESSION['input2'] = 0 ;
+//$_SESSION['input3'] = 0;
+//$_SESSION['input4'] = 0;
+//$_SESSION['input5'] = 0;
 //menu
 $assortment = array(
     'Square' => array('Square', 'Квадрат'),

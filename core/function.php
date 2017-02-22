@@ -13,3 +13,11 @@ function goBack(){
     $url = (isset($_SERVER['HTTP_REFERER'])) ? $_SERVER['HTTP_REFERER'] : "/" ;
     header("Location: $url");
 }
+
+function session_input_to_0(){
+    $_SESSION['input'] = 0 ;
+    $_SESSION['input1'] = 0 ;
+    $_SESSION['input2'] = 0 ;
+    $_SESSION['input3'] = 0 ;
+    $_SESSION['input4'] = 0 ;
+}

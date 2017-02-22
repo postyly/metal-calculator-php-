@@ -6,6 +6,10 @@ if ($_SESSION['role'] == 'weight') {
     $a = isNumber($_POST['input2']);
     $b = isNumber($_POST['input3']);
     $count = isNumber($_POST['input4']);
+    $_SESSION['input1'] = $t;
+    $_SESSION['input2'] = $a;
+    $_SESSION['input3'] = $b;
+    $_SESSION['input4'] = $count;
     $weight = $a * $t * $b * $density * $count / 1000000;
     $area = $a * $b * $count / 1000000;
 //округляем до 0,01
@@ -18,6 +22,9 @@ else {
     $a = isNumber($_POST['input1']);
     $t = isNumber($_POST['input2']);
     $weight = isNumber($_POST['input3']);
+    $_SESSION['input1'] = $a;
+    $_SESSION['input2'] = $t;
+    $_SESSION['input3'] = $weight;
     if ($a == 0 or $t == 0 or $weight == 0) {
         $length = 0;
     } else {

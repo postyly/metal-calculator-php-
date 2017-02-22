@@ -5,6 +5,9 @@ if ($_SESSION['role'] == 'weight'){
     $a = isNumber($_POST['input1']);
     $t = isNumber($_POST['input2']);
     $l = isNumber($_POST['input3']);
+    $_SESSION['input1'] = $a;
+    $_SESSION['input2'] = $t;
+    $_SESSION['input3'] = $l;
 
     $result = $a * $t * $l * $density / 1000;
 //округляем до 0,01
@@ -18,7 +21,9 @@ else{
     $a = isNumber($_POST['input1']);
     $t = isNumber($_POST['input2']);
     $weight = isNumber($_POST['input3']);
-
+    $_SESSION['input1'] = $a;
+    $_SESSION['input2'] = $t;
+    $_SESSION['input3'] = $weight;
 if ($a == 0 or $t == 0){
     $result = 0;
 }

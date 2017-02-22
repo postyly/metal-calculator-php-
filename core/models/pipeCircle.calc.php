@@ -5,7 +5,9 @@ if ($_SESSION['role'] == 'weight') {
     $diam = isNumber($_POST['input1']);
     $t = isNumber($_POST['input2']);
     $l = isNumber($_POST['input3']);
-
+    $_SESSION['input1'] = $diam;
+    $_SESSION['input2'] = $t;
+    $_SESSION['input3'] = $l;
     $weight = $density * $diam * $l * $t * M_PI / 1000;
 //округляем до 0,01
     $weight = round($weight, 2);
@@ -16,6 +18,9 @@ else {
     $diam = isNumber($_POST['input1']);
     $t = isNumber($_POST['input2']);
     $weight = isNumber($_POST['input3']);
+    $_SESSION['input1'] = $diam;
+    $_SESSION['input2'] = $t;
+    $_SESSION['input3'] = $weight;
     if ($diam == 0 or $t == 0 or $weight == 0) {
         $length = 0;
     } else {
