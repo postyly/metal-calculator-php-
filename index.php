@@ -28,9 +28,10 @@ require_once "core/controller.php";
     <![endif]-->
 </head>
 <body>
-<div class="container" style="width: 820px">
-    <h1 class="text-center">Калькулятор веса нержавеющего металлопроката.</h1>
-    <div class="col-lg-4 col-md-4 col-sm-4">
+<div class="container" style="width: 750px">
+<!--    <h1 class="text-center">Калькулятор веса нержавеющего металлопроката.</h1>-->
+    <div class="col-lg-1 col-md-1 col-sm-1"></div>
+    <div class="col-lg-3 col-md-3 col-sm-3">
 <!--        меню, выбор сортамента-->
     <?php include_once "views/menu.view.php";?>
     </div>
@@ -39,9 +40,10 @@ require_once "core/controller.php";
         <?php include_once "views/image.view.php";?>
     </div>
 <!--    форма-->
-    <div class="col-lg-4 col-md-4 col-sm-4">
+    <div class="col-lg-3 col-md-3 col-sm-3">
         <?php include_once "views/form.view.php";?>
     </div>
+    <div class="col-lg-1 col-md-1 col-sm-1"></div>
 </div>
 
 <!--<pre>-->

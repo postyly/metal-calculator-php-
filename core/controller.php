@@ -61,9 +61,9 @@ if (isset($_GET['assortment'])){
         case 'List':
             require_once "models/list.form.php";
             break;
-        case 'Branch':
-            require_once "models/branch.form.php";
-            break;
+//        case 'Branch':
+//            require_once "models/branch.form.php";
+//            break;
         case 'PipeCircle':
             require_once "models/pipeCircle.form.php";
             break;
@@ -73,9 +73,9 @@ if (isset($_GET['assortment'])){
         case 'Corner':
             require_once "models/corner.form.php";
             break;
-        case 'Flange':
-            require_once "models/flange.form.php";
-            break;
+//        case 'Flange':
+//            require_once "models/flange.form.php";
+//            break;
         case 'ChannelP':
             require_once "models/channelP.form.php";
             break;
@@ -88,7 +88,7 @@ if (isset($_GET['assortment'])){
     }
 }
 else{
-    require_once "models/square.form.php";
+    require_once "models/pipeCircle.form.php";
 }
 
 //проверка результата
