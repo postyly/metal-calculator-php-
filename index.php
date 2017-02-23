@@ -28,18 +28,18 @@ require_once "core/controller.php";
     <![endif]-->
 </head>
 <body>
-<div class="container">
+<div class="container" style="width: 820px">
     <h1 class="text-center">Калькулятор веса нержавеющего металлопроката.</h1>
-    <div class="col-lg-4 col-md-4">
+    <div class="col-lg-4 col-md-4 col-sm-4">
 <!--        меню, выбор сортамента-->
     <?php include_once "views/menu.view.php";?>
     </div>
 <!--    изображение-->
-    <div class="col-lg-4 col-md-4">
+    <div class="col-lg-4 col-md-4 col-sm-4">
         <?php include_once "views/image.view.php";?>
     </div>
 <!--    форма-->
-    <div class="col-lg-4 col-md-4">
+    <div class="col-lg-4 col-md-4 col-sm-4">
         <?php include_once "views/form.view.php";?>
     </div>
 </div>

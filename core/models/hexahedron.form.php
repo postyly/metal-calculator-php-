@@ -8,7 +8,7 @@ $select[0]['options'] = $steel_grade;
 
 $input[0] =array('path' => 'input1',
                 'label' => 'Номер шестигранника a',
-                'units' => 'mm.',
+                'units' => 'мм.',
                 'value' => $_SESSION['input1']);
 
 if ($_SESSION['role'] == 'weight'){

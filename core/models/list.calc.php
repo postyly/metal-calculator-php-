@@ -16,4 +16,4 @@
     $weight = round($weight, 2);
     $control = $weight;
     $area = round($area, 2);
-    $result = "Площадь = " . $area . " м2. Вес = " . $weight . " кг.";
+    $result = "Площадь = " . $area . " м2. <br> Вес = " . $weight . " кг.";

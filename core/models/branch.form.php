@@ -12,15 +12,15 @@ $select[1]['options'] = $branch_size;
 
 $input[0] =array('path' => 'input1',
                 'label' => 'Толщина листа t',
-                'units' => 'mm.',
+                'units' => 'мм.',
                 'value' => $_SESSION['input1']);
 $input[1] =array('path' => 'input2',
                 'label' => 'Ширина листа a',
-                'units' => 'mm.',
+                'units' => 'мм.',
                 'value' => $_SESSION['input2']);
 $input[2] =array('path' => 'input3',
                 'label' => 'Длина листа b',
-                'units' => 'mm.',
+                'units' => 'мм.',
                 'value' => $_SESSION['input3']);
 $input[3] =array('path' => 'input4',
                 'label' => 'Количество',

@@ -5,7 +5,7 @@ $width = $size[0];
 $height = $size[1];
 ?>
 <div>
-    <h3 class="text-center"><?= $title_img ?></h3>
+    <h4 class="text-center"><?= $title_img ?></h4>
     <img class="center-block" src="image/<?= $path ?>.png" width="<?= $width ?>" height="<?= $height ?>">
 </div>
 

@@ -37,6 +37,6 @@ else {
         $area = ($weight / $density) / $t;
         $area = round($area, 2);
     }
-    $result = "Площадь = " . $area . " м2. Вес = " . $result . " кг.";
+    $result = "Площадь = " . $area . " м2. <br> Вес = " . $result . " кг.";
 
 }

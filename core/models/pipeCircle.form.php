@@ -8,12 +8,12 @@ $select[0]['options'] = $steel_grade;
 
 $input[0] =array('path' => 'input1',
     'label' => 'Внешний диаметр трубы D',
-    'units' => 'mm.',
+    'units' => 'мм.',
     'value' => $_SESSION['input1']);
 
 $input[1] =array('path' => 'input2',
     'label' => 'Толщина стенки t',
-    'units' => 'mm.',
+    'units' => 'мм.',
     'value' => $_SESSION['input2']);
 
 if ($_SESSION['role'] == 'weight'){
