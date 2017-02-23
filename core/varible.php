@@ -5,11 +5,11 @@ $assortment = array(
     'Circle' => array('Circle', 'Круг/пруток'),
     'Ribbon' => array('Ribbon', 'Лента'),
     'List' => array('List', 'Лист/плита'),
-    'Branch' => array('Branch', 'Отвод'),
+   // 'Branch' => array('Branch', 'Отвод'),
     'PipeCircle' => array('PipeCircle', 'Труба круглая'),
     'PipeProf' => array('PipeProf', 'Труба профильная'),
     'Corner' => array('Corner', 'Уголок'),
-    'Flange' => array('Flange', 'Фланец плоский'),
+  //  'Flange' => array('Flange', 'Фланец плоский'),
     'ChannelP' => array('ChannelP', 'Швеллер'),
     'Hexahedron' => array('Hexahedron', 'Шестигранник')
 );
