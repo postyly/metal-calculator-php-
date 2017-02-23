@@ -14,6 +14,7 @@ if ($_SESSION['role'] == 'weight'){
     $weight = (($a * $b) - ($a - 2 * $t) * ($b - $t)) * $l * $density / 1000;
 //округляем до 0,01
     $weight = round($weight, 2);
+    $control = $weight;
     $result = "Вес = " . $weight . " кг.";
 }
 
@@ -31,10 +32,12 @@ else{
     $_SESSION['input4'] = $weight;
     if ($a == 0 or $b == 0 or $t == 0 or $weight == 0){
         $length = 0;
+        $control = $length;
     }
     else {
         $length = $weight * 1000 / ($density * (($a * $b) - ($a - 2 * $t) * ($b - $t)));;
         $length = round($length, 3);
+        $control = $length;
     }
     $result = "Длина = " . $length . " м.";
 }

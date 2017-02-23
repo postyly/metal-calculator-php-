@@ -12,6 +12,7 @@ if ($_SESSION['role'] == 'weight') {
     $weight = ((($diam - $t) * $t * 0.025) / 7.9 * $density) * $l;
 //округляем до 0,01
     $weight = round($weight, 2);
+    $control = $weight;
     $result = "Вес = " . $weight . " кг.";
 } //рассчет длина круглая труба
 else {
@@ -25,10 +26,12 @@ else {
     $_SESSION['input3'] = $weight;
     if ($diam == 0 or $t == 0 or $weight == 0) {
         $length = 0;
+        $control = $length;
     } else {
         $length = $weight / ((($diam - $t) * $t * 0.025) / 7.9 * $density);
         //округляем до 0,001
         $length = round($length, 3);
+        $control = $length;
     }
     $result = "Длина = " . $length . " м.";
 }

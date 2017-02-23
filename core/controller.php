@@ -91,3 +91,5 @@ else{
     require_once "models/square.form.php";
 }
 
+//проверка результата
+require_once "models/result_control.php";

@@ -14,5 +14,6 @@
     $area = $a * $b * $count / 1000000;
 //округляем до 0,01
     $weight = round($weight, 2);
+    $control = $weight;
     $area = round($area, 2);
     $result = "Площадь = " . $area . " м2. Вес = " . $weight . " кг.";

@@ -14,6 +14,7 @@ if ($_SESSION['role'] == 'weight') {
     $area = $a * $l / 1000;
 //округляем до 0,01
     $result = round($result, 2);
+    $control = $result;
     $area = round($area, 2);
     $result = "Площадь = " . $area . " м2. Вес = " . $result . " кг.";
 } //рассчет длина лента
@@ -28,11 +29,14 @@ else {
     $_SESSION['input3'] = $weight;
     if ($a == 0 or $t == 0) {
         $result = 0;
+        $control = $result;
     } else {
         $result = $weight * 1000 / ($a * $t * $density);
         $result = round($result, 3);
+        $control = $result;
         $area = ($weight / $density) / $t;
         $area = round($area, 2);
     }
     $result = "Площадь = " . $area . " м2. Вес = " . $result . " кг.";
+
 }

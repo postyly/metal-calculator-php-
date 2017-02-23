@@ -11,6 +11,7 @@ if ($_SESSION['role'] == 'weight') {
     $result = $density * $a * $a * $l / 1000;
 //округляем до 0,01
     $result = round($result, 2);
+    $control = $result;
     $result = "Вес = " . $result . " кг.";
 } //рассчет длина квадрат
 else {
@@ -22,9 +23,11 @@ else {
     $_SESSION['input2'] = $weight;
     if ($a == 0) {
         $result = 0;
+        $control = $result;
     } else {
         $result = ($weight / $density / ($a * $a)) * 1000;
         $result = round($result, 3);
+        $control = $result;
     }
     $result = "Длина = " . $result . " м.";
 }
