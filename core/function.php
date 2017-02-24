@@ -13,7 +13,7 @@ function goBack(){
     $url = (isset($_SERVER['HTTP_REFERER'])) ? $_SERVER['HTTP_REFERER'] : "/" ;
     header("Location: $url");
 }
-
+//обнуляет значения введенных ранее данных в сессии
 function session_input_to_0(){
     $_SESSION['input'] = '12Х18Н10Т' ;
     $_SESSION['input1'] = 0 ;

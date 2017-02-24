@@ -34,3 +34,8 @@
         <button type="submit" class="btn btn-primary">Рассчитать</button>
     </p>
 </form>
+<!--результат вычисления-->
+
+<div class="result_under_form <?= $result_status ?>"  role="alert">
+    <?= (!empty($result)) ? $result : "" ?>
+</div>

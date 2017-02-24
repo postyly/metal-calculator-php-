@@ -11,6 +11,6 @@ $height = $size[1];
 
 <!--результат вычисления-->
 <br><br><br>
-<div <?= $result_status ?>  role="alert">
+<div class="result_under_image <?= $result_status ?>"  role="alert">
     <?= (!empty($result)) ? $result : "" ?>
 </div>

@@ -10,3 +10,82 @@ h3{
 h4{
     font-weight: bold;
 }
+.btn-default.active,
+.btn-default:active,
+.open > .dropdown-toggle.btn-default{
+    background-color: #3D566F;
+    border-color: #2a4d6f;
+    color: #ffffff;
+}
+.nav > li > a:hover{
+    background-color: #E7E8EF;
+}
+.btn-default.active:hover{
+    background-color: #3D566F;
+    border-color: #2a4d6f;
+    color: #E84D3D;
+}
+.btn-default:hover{
+    background-color: #E7E8EF;
+    border-color: #2a4d6f;
+}
+.btn-primary{
+    background-color: #E54B3B;
+    border-color: #e53520;
+}
+.btn-primary:hover{
+    background-color: #e5280e;
+    border-color: #e53520;
+}
+.btn-primary:active:focus,
+.btn-primary:active:hover{
+    background-color: #e5030b;
+    border-color: #e53520;
+}
+.success{
+    background-color: #3D566F;
+    border-color: #2a4d6f;
+    color: #ffffff;
+}
+.input-group-addon{
+    background-color: #3D566F;
+    border-color: #2a4d6f;
+    color: #ffffff;
+}
+.calculator{
+    width: 100%;
+}
+.result_under_form{
+    visibility: hidden;
+}
+.result_under_image{
+    visibility: visible;
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 680px) {
+    .col{
+        width: 70%;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .result_under_image{
+        visibility: hidden;
+    }
+    .result_under_form{
+        visibility: visible;
+    }
+}
+/* Extra Small Devices, phones */
+@media only screen and (max-width : 480px) {
+    .col{
+        width: 100%;
+        float: none;
+    }
+    .result_under_image{
+        visibility: hidden;
+    }
+    .result_under_form{
+        visibility: visible;
+    }
+}

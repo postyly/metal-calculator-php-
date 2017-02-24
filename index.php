@@ -28,59 +28,22 @@ require_once "core/controller.php";
     <![endif]-->
 </head>
 <body>
-<div class="container" style="width: 750px">
-<!--    <h1 class="text-center">Калькулятор веса нержавеющего металлопроката.</h1>-->
-    <div class="col-lg-1 col-md-1 col-sm-1"></div>
-    <div class="col-lg-3 col-md-3 col-sm-3">
-<!--        меню, выбор сортамента-->
-    <?php include_once "views/menu.view.php";?>
+<div class="container calculator">
+    <h1 class="text-center">Калькулятор веса нержавеющего металлопроката.</h1>
+    <div class="col-lg-1 col-md-1"></div>
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-4 col">
+        <!--        меню, выбор сортамента-->
+        <?php include_once "views/menu.view.php"; ?>
     </div>
-<!--    изображение-->
-    <div class="col-lg-4 col-md-4 col-sm-4">
-        <?php include_once "views/image.view.php";?>
+    <!--    изображение-->
+    <div class="col-lg-4 col-md-4 col-sm-5 col-xs-5 col">
+        <?php include_once "views/image.view.php"; ?>
     </div>
-<!--    форма-->
-    <div class="col-lg-3 col-md-3 col-sm-3">
-        <?php include_once "views/form.view.php";?>
+    <!--    форма-->
+    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-3 col">
+        <?php include_once "views/form.view.php"; ?>
     </div>
-    <div class="col-lg-1 col-md-1 col-sm-1"></div>
+    <div class="col-lg-1 col-md-1"></div>
 </div>
-
-<!--<pre>-->
-<?php
-//echo "POST";
-//echo "<br>";
-//var_dump($_POST);
-//echo "SESSION";
-//echo "<br>";
-//var_dump($_SESSION);
-//echo "input";
-//echo "<br>";
-//var_dump($input);
-//echo "<br>";
-//var_dump($arr);
-//?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
